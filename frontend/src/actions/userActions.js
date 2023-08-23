@@ -3,6 +3,7 @@ import {USER_LOGIN_FAIL,USER_LOGOUT,USER_LOGIN_SUCCESS,USER_LOGIN_REQUEST, USER_
 import {ORDER_LIST_MY_RESET} from '../constants/orderConstants'
 
 export const login = (email, password) => async(dispatch) =>{
+    console.log(email,password)
     try {
         dispatch({type :USER_LOGIN_REQUEST})
 
